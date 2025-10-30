@@ -1,0 +1,19 @@
+# py files
+/__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# virtual envs
+venv/
+env/
+
+# logs
+logs/
+mlartifacts/
+mlruns/
+
+## catboost
+catboost_info/
+
+## artifacts-data
+artifacts/*.csv

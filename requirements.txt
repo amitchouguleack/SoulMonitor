@@ -1,0 +1,28 @@
+# SoulMonitor — MLOps with soul and swagger 💥
+# MIT Licensed • Solo Contributor • Built by Amit Chougule
+
+# Core ML stack
+pandas
+numpy
+scikit-learn==1.2.1
+xgboost
+catboost
+lightgbm
+imblearn
+dill
+
+# MLOps + Monitoring
+mlflow==2.3.*
+dvc==3.0.0
+python-dotenv
+
+# API + Deployment
+fastapi
+uvicorn
+httpx
+
+# Dev Tools
+faker
+pytest
+flake8
+wheel

@@ -1,0 +1,15 @@
+.dvc/
+catboost_info/
+env/
+logs/
+ml_best_practices.egg-info/
+mlartifacts/
+mlruns/
+notebooks/
+raw_data/
+synthetic_data/
+test/
+__pycache__/
+*.pyc
+*.csv
+*.ipynb_checkpoints
