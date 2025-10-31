@@ -1,5 +1,14 @@
 # 🧠 SoulMonitor — MLOps with Soul, Swagger, and Streamlit
 
+---
+
+title: SoulMonitor
+sdk: fastapi
+app_file: app.py
+license: mit
+
+---
+
 Welcome to **SoulMonitor**, where model drift gets diagnosed with love, not latency 💥🍲
 
 This repo is my remix of MLOps best practices — stripped down, affirmation-powered, and recruiter-ready. If you're tired of pipelines that feel like rocket science, SoulMonitor brings clarity, comfort, and clean deployment in under 15 minutes.
