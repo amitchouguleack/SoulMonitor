@@ -1,17 +1,18 @@
 # 🧠 SoulMonitor — MLOps with Soul, Swagger, and Streamlit
 
----
-
-title: SoulMonitor
-sdk: fastapi
-app_file: app.py
-license: mit
+[![Streamlit App](https://img.shields.io/badge/Live-SoulMonitor-green?logo=streamlit)](https://dezac4jfrtjmnpt6vtbxko.streamlit.app)
 
 ---
 
-Welcome to **SoulMonitor**, where model drift gets diagnosed with love, not latency 💥🍲
+**Built by [Amit Chougule](https://github.com/amitchouguleack)**  
+AI/ML Architect • SoulFuel Cart Founder • Remix Evangelist  
+MIT Licensed • Solo Contributor • Streamlit Deployed
 
-This repo is my remix of MLOps best practices — stripped down, affirmation-powered, and recruiter-ready. If you're tired of pipelines that feel like rocket science, SoulMonitor brings clarity, comfort, and clean deployment in under 15 minutes.
+---
+
+Welcome to **SoulMonitor**, where model drift gets diagnosed with love, not latency 💥🍲  
+This repo is my remix of MLOps best practices — stripped down, affirmation-powered, and recruiter-ready.  
+If you're tired of pipelines that feel like rocket science, SoulMonitor brings clarity, comfort, and clean deployment in under 15 minutes.
 
 ---
 
@@ -30,12 +31,13 @@ SoulMonitor covers the full lifecycle with a soulful twist:
 - ⚡ **FastAPI** — serve predictions with Swagger and swagger
 - 🚢 **Docker + AKS** — containerized deployment with Azure flavor
 - 🔁 **CI/CD** — automated builds, tests, and affirmations
+- 🌐 **Streamlit UI** — live demo with soulful inputs and recruiter-ready UX
 
 ---
 
 ## 🛠️ Tech Stack
 
-Python • FastAPI • MLflow • DVC • Docker • Azure • Streamlit (optional but soulful)
+Python • FastAPI • MLflow • DVC • Docker • Azure • Streamlit • Scikit-learn • XGBoost • LightGBM • CatBoost
 
 ---
 
@@ -47,7 +49,7 @@ cd SoulMonitor
 python -m venv env
 source env/bin/activate
 pip install -r requirements.txt
-python app.py
+streamlit run app.py
 Optional:
 
 bash
