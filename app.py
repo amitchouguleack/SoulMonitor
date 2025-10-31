@@ -1,11 +1,21 @@
-import gradio as gr
+import streamlit as st
 import pandas as pd
 from src.pipeline.predict_pipeline import PredictPipeline, CustomData
 
 predictor = PredictPipeline()
 
+st.title("SoulMonitor — Churn Prediction")
 
-def predict_churn(age, salary, tenure, balance, num_products, has_cr_card, is_active_member, estimated_salary):
+age = st.number_input("Age")
+salary = st.number_input("Salary")
+tenure = st.number_input("Tenure")
+balance = st.number_input("Balance")
+num_products = st.number_input("Number of Products")
+has_cr_card = st.checkbox("Has Credit Card")
+is_active_member = st.checkbox("Is Active Member")
+estimated_salary = st.number_input("Estimated Salary")
+
+if st.button("Predict"):
     data = CustomData(
         Age=age,
         Salary=salary,
@@ -18,24 +28,4 @@ def predict_churn(age, salary, tenure, balance, num_products, has_cr_card, is_ac
     )
     df = data.get_data_as_data_frame()
     prediction = predictor.predict(df)
-    return "Yes" if int(prediction.item()) == 1 else "No"
-
-
-demo = gr.Interface(
-    fn=predict_churn,
-    inputs=[
-        gr.Number(label="Age"),
-        gr.Number(label="Salary"),
-        gr.Number(label="Tenure"),
-        gr.Number(label="Balance"),
-        gr.Number(label="Number of Products"),
-        gr.Checkbox(label="Has Credit Card"),
-        gr.Checkbox(label="Is Active Member"),
-        gr.Number(label="Estimated Salary")
-    ],
-    outputs=gr.Text(label="Churn Prediction"),
-    title="SoulMonitor",
-    description="MLOps with soul — predict churn with affirmation-powered clarity 💡"
-)
-
-demo.launch()
+    st.success("Churn: Yes" if int(prediction.item()) == 1 else "Churn: No")
