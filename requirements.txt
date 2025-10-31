@@ -7,3 +7,4 @@ catboost
 lightgbm
 imblearn
 dill
+python-dotenv
