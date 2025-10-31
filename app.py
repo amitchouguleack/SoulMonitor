@@ -43,9 +43,9 @@ st.sidebar.markdown("## About SoulMonitor")
 st.sidebar.info("""
 SoulMonitor is a modular churn prediction app built by Amit Chougule.
 
-🔹 MLOps with soul
-🔹 Streamlit UI for clarity
-🔹 MIT Licensed & recruiter-ready
+🔹 MLOps with soul  
+🔹 Streamlit UI for clarity  
+🔹 MIT Licensed & recruiter-ready  
 """)
 
 # 🖋️ Footer Signature
@@ -53,5 +53,4 @@ st.markdown("---")
 st.markdown(
     "**Built by Amit Chougule — AI/ML Architect & SoulFuel Cart Founder**")
 st.markdown("💡 Remix everything. Deploy with soul. Live with swagger.")
-st.markdown(
-    "[GitHub](https://github.com/amitchouguleack)
+st.markdown("GitHub: amitchouguleack")
